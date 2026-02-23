@@ -16,6 +16,7 @@ This project demonstrates backend development skills including:
 - Node.js
 - Express.js
 - PostgreSQL
+- Redis
 - RabbitMQ (AMQP)
 - Nodemailer
 - JWT Authentication
@@ -35,6 +36,7 @@ This project demonstrates backend development skills including:
 - Playlist ownership & collaboration support
 
 ### ✅ Asynchronous Export (Event-Driven)
+- Redis Caching
 - Publish export request to RabbitMQ
 - Consumer processes export request
 - Playlist exported as JSON file
