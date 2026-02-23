@@ -5,9 +5,6 @@ import config from '../utils/config.js';
 import PlaylistsService from '../services/PlaylistsService.js';
 import EmailService from '../services/EmailService.js';
 
-console.log('SMTP_HOST:', process.env.SMTP_HOST);
-console.log('SMTP_PORT:', process.env.SMTP_PORT);
-
 const playlistsService = new PlaylistsService();
 const emailService = new EmailService();
 

@@ -13,7 +13,6 @@ class EmailService {
         pass: config.smtp.pass,
       },
     });
-    console.log(this._transporter.options);
   }
   
   async sendEmail(to, subject, text, html, attachments = []) {
