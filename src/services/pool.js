@@ -1,11 +1,15 @@
 import pkg from 'pg';
 const { Pool } = pkg;
 
+if (!process.env.PGPASSWORD) {
+  throw new Error('PGPASSWORD tidak ditemukan di environment variable');
+}
+
 const pool = new Pool({
   host: process.env.PGHOST,
-  port: process.env.PGPORT,
+  port: Number(process.env.PGPORT),
   user: process.env.PGUSER,
-  password: process.env.PGPASSWORD,
+  password: String(process.env.PGPASSWORD),
   database: process.env.PGDATABASE,
 });
 

@@ -28,7 +28,7 @@ class SongsService {
     return result.rows[0].id;
   }
 
-  async getSongs(title = '', performer = '') {
+  async getSongs({ title = '', performer = '' }) {
     const query = {
       text: `
         SELECT id, title, performer
@@ -116,6 +116,16 @@ class SongsService {
 
     if (!result.rows.length) {
       throw new NotFoundError('Song gagal dihapus. Id tidak ditemukan');
+    }
+  }
+  async verifySongExists(id) {
+    const result = await pool.query({
+      text: 'SELECT id FROM songs WHERE id = $1',
+      values: [id],
+    });
+
+    if (!result.rowCount) {
+      throw new NotFoundError('Lagu tidak ditemukan');
     }
   }
 }

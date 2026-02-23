@@ -1,6 +1,6 @@
 import autoBind from 'auto-bind';
-import SongsService from '../services/SongsService.js';
-import SongsValidator from '../validator/songs/index.js';
+import SongsService from '../../services/SongsService.js';
+import SongsValidator from '../../validator/songs/index.js';
 
 class SongsHandler {
   constructor() {

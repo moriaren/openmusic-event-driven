@@ -30,9 +30,8 @@ export function up(pgm) {
     },
     album_id: {
       type: 'VARCHAR(50)',
-      references: 'albums(id)', // jelas kolom yang direferensi
-      onDelete: 'SET NULL',     // jika album dihapus, album_id di songs jadi null
-      notNull: false,           // harus nullable supaya SET NULL bisa bekerja
+      references: 'albums(id)',
+      onDelete: 'SET NULL',
     },
   });
 }
