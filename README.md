@@ -98,10 +98,11 @@ Exported file format:
 ---
 
 ## ⚙️ Installation
-
+```
 npm install
-
+```
 Create .env file:
+```
 HOST=localhost
 PORT=5000
 
@@ -117,11 +118,13 @@ SMTP_HOST=your_smtp_host
 SMTP_PORT=your_smtp_port
 SMTP_USER=your_email
 SMTP_PASS=your_password
-
+```
 Run server:
+```
 npm run start
-
+```
 Run consumer:
+```
 node src/consumer.js
-
+```
 ---
