@@ -52,7 +52,7 @@ This project implements asynchronous processing using message queue to avoid blo
 ---
 
 ## 📂 Project Structure
-
+```
 src/
 ├── api/
 ├── services/
@@ -61,7 +61,7 @@ src/
 ├── utils/
 ├── consumer.js
 └── server.js
-
+```
 
 ---
 
