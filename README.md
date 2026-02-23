@@ -48,7 +48,7 @@ This project demonstrates backend development skills including:
 
 Client → REST API → PostgreSQL  
 Export Request → RabbitMQ → Consumer → Email Service
-Redis Caching for export requests
+<br>Redis Caching for export requests
 
 This project implements asynchronous processing using message queue to avoid blocking main request-response cycle.
 
